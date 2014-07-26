@@ -1,0 +1,11 @@
+diff -Naur gnome-control-center-3.4.2.orig/panels/sound/data/gnome-sound-applet.desktop.in gnome-control-center-3.4.2/panels/sound/data/gnome-sound-applet.desktop.in
+--- gnome-control-center-3.4.2.orig/panels/sound/data/gnome-sound-applet.desktop.in	2012-05-26 22:47:35.016881134 +0700
++++ gnome-control-center-3.4.2/panels/sound/data/gnome-sound-applet.desktop.in	2012-05-26 22:55:28.544895078 +0700
+@@ -13,5 +13,5 @@
+ # See http://bugzilla.gnome.org/show_bug.cgi?id=568320
+ #X-GNOME-Autostart-Phase=Panel
+ X-GNOME-Autostart-Notify=true
+-AutostartCondition=GNOME3 if-session gnome-fallback
+-OnlyShowIn=GNOME;Unity;
++#AutostartCondition=GNOME3 if-session gnome-fallback
++OnlyShowIn=GNOME

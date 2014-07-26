@@ -1,0 +1,29 @@
+diff -Naur gnome-control-center-3.4.2.orig/shell/cc-shell-model.c gnome-control-center-3.4.2/shell/cc-shell-model.c
+--- gnome-control-center-3.4.2.orig/shell/cc-shell-model.c	2012-11-08 00:52:59.000000000 +0700
++++ gnome-control-center-3.4.2/shell/cc-shell-model.c	2012-12-12 03:49:53.332786368 +0700
+@@ -43,7 +43,7 @@
+   theme = gtk_icon_theme_get_default ();
+ 
+   icon_info = gtk_icon_theme_lookup_by_gicon (theme, icon,
+-                                              32, GTK_ICON_LOOKUP_FORCE_SIZE);
++                                              48, GTK_ICON_LOOKUP_FORCE_SIZE);
+   if (icon_info)
+     {
+       pixbuf = gtk_icon_info_load_icon (icon_info, &err);
+diff -Naur gnome-control-center-3.4.2.orig/shell/gnome-control-center.c gnome-control-center-3.4.2/shell/gnome-control-center.c
+--- gnome-control-center-3.4.2.orig/shell/gnome-control-center.c	2012-11-08 00:52:59.000000000 +0700
++++ gnome-control-center-3.4.2/shell/gnome-control-center.c	2012-12-12 04:50:01.020347682 +0700
+@@ -47,10 +47,10 @@
+ /* Use a fixed width for the shell, since resizing horizontally is more awkward
+  * for the user than resizing vertically
+  * Both sizes are defined in https://live.gnome.org/Design/SystemSettings/ */
+-#define FIXED_WIDTH 675
+-#define FIXED_HEIGHT 530
++#define FIXED_WIDTH 740
++#define FIXED_HEIGHT 620
+ 
+-#define MIN_ICON_VIEW_HEIGHT 300
++#define MIN_ICON_VIEW_HEIGHT 320
+ 
+ enum
+ {

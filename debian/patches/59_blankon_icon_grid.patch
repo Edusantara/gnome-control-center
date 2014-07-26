@@ -1,0 +1,14 @@
+diff -Naur gnome-control-center-3.4.2.orig/shell/shell.ui gnome-control-center-3.4.2/shell/shell.ui
+--- gnome-control-center-3.4.2.orig/shell/shell.ui	2012-11-08 00:52:59.000000000 +0700
++++ gnome-control-center-3.4.2/shell/shell.ui	2012-12-12 05:22:08.465303142 +0700
+@@ -179,8 +179,8 @@
+   <object class="GtkImage" id="image1">
+     <property name="visible">True</property>
+     <property name="can_focus">False</property>
+-    <property name="icon_name">view-grid-symbolic</property>
++    <property name="icon_name">preferences-desktop</property>
+     <property name="use_fallback">True</property>
+-    <property name="pixel-size">16</property>
++    <property name="pixel-size">22</property>
+   </object>
+ </interface>
